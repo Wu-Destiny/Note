@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href=" http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src=" http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src=" http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="javascript/livePage.js"></script>
+    <title>坏笔头</title>
+    <link rel="stylesheet" href="css/note.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <ul class="nav nav-tabs  navbar-fixed-top">
+        <li role="presentation"><img alt="Brand" width="70" height="50" src="image/live.png"></li>
+        <img alt="Brand" width="70" height="50" src="image/live.png">
+        <li role="presentation" class="active"><a href="#">直播/视频提醒</a></li>
+        <li role="presentation"><a href="#">待办事项</a></li>
+        <li role="presentation"><a href="#">已完成事项</a></li>
+    </ul>
+
+</nav>
+<div id="option">
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="#">关注列表</a></li>
+        <li role="presentation"><a href="#">添加关注</a></li>
+        <li role="presentation"><a href="#">删除关注</a></li>
+    </ul>
+</div>
+
+<div id="page">
+    <div id="livePage" class="hide">
+        <div id="live-list" class="hide">
+            <table class="table table-hover">
+                <tr>
+                    <td>#</td>
+                    <td>名字</td>
+                    <td>类型</td>
+                    <td>简述</td>
+                    <td>URL地址</td>
+                </tr>  
+                <tr>
+                    <td>1</td>
+                    <td>Pdd直播</td>
+                    <td>主播开播</td>
+                    <td>骚猪</td>
+                    <td><a target="_blank" href="http://www.zhanqi.tv/6">http://www.zhanqi.tv/6</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="live-add" class="hide">LiveAdd</div>
+        <div id="live-remove" class="hide" LiveRemove></div>
+    </div>
+    <div id="listPage" class="hide">Things...</div>
+    <div id="historyPage" class="hide">History...</div>
+</div>
+
+</body>
+
+<script>
+    $(function () {
+        $("#livePage").removeClass("hide");
+        $("#live-list").removeClass("hide");
+    });
+</script>
+
+</html>
